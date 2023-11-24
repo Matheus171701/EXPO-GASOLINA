@@ -70,7 +70,7 @@ export default function App() {
           <Text style={styles.title}>{`Resultado: ${resultado} km/Litro`}</Text>
         </View>
         <View>
-          <Pressable style={styles.pressable} onPress={limpar}>
+          <Pressable style={styles.pressable2} onPress={limpar}>
             <Text style={styles.resultado}>Limpar dados</Text>
           </Pressable>
         </View>
@@ -105,7 +105,14 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   pressable: {
-    backgroundColor: '#86ee86',
+    backgroundColor: '#39ff14',
+    borderRadius: 5,
+    padding: 10,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  pressable2: {
+    backgroundColor: 'red',
     borderRadius: 5,
     padding: 10,
     alignItems: 'center',
