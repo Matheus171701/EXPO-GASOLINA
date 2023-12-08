@@ -40,7 +40,7 @@ export default function App() {
           <Text style={styles.title}>Valor do litro (R$5.52)</Text>
         </View>
         <View>
-          <Text>Quantidade Abastecida</Text>
+          <Text style={styles.text}>Quantidade Abastecida</Text>
           <View style={styles.input}>
             <TextInput
               value={quantidade}
@@ -51,7 +51,7 @@ export default function App() {
           </View>
         </View>
         <View>
-          <Text>Kilômetros Rodados</Text>
+          <Text style={styles.text}>Kilômetros Rodados</Text>
           <View style={styles.input}>
             <TextInput
               value={kmrodado}
@@ -85,11 +85,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#808080'
   },
   content: {
     width: '80%',
   },
   title: {
+
+    
     fontSize: 18,
     fontWeight: 'bold',
     marginTop: 10,
@@ -100,6 +103,9 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 5,
     marginTop: 5,
+  },
+  text: {
+    color: "#ffffff"
   },
   texto: {
     fontSize: 16,
